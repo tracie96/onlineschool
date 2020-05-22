@@ -5,5 +5,229 @@
 }
 
 .top-header {
-  background-color: aqua;
+  background-color: darkslategrey;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem .6rem
 }
+.top-header .phone span{
+  color: white;
+}
+.top-header > div > ul >li{
+  list-style: none;
+  display: inline-block;
+  padding: 0rem 0.5rem;
+}
+.top-header > div > ul > li > a{
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+.top-header > div > ul > li > a:hover{
+  color: rgba(255, 166, 0, 0.397);
+}
+.main-header{
+  padding: 0.8rem;
+}
+.logoandtoggle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.mobilenav .logo{
+  width: 100%;
+}
+.mobilenav .logo img{
+  height: 4.2rem
+}
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__line {
+  width: 100%;
+  height: 0.22rem;
+  background:  darkslategrey;
+  border-radius: 6px;
+  display: block;
+  margin: 0.6rem 0;
+}
+
+.mobilenav .mobilemenu{
+  display: none;
+}
+.mobilenav .mobilemenu > ul{
+  padding-top: 1.6rem;
+}
+.mobilenav .mobilemenu > ul >li{
+  list-style: none;
+  text-transform: uppercase;
+  padding: 1.3rem;
+  position: relative;
+  z-index: -2;
+  border: 1px solid #cccccc65;
+  background: #cccccc56;
+ /* box-shadow: inset 0 0 10px transparent;;*/
+}
+.mobilenav .mobilemenu > ul >li > a{
+  color: rgba(0, 0, 0, 0.705);
+  text-decoration: none;
+}
+.mobilenav .mobilemenu > ul >li > a span{
+  color: rgba(255, 255, 255, 0.603);
+}
+.mobilenav .mobilemenu .search-container{
+  width: 100%;
+}
+
+.mobilenav .mobilemenu input[type=text]{
+  padding: 1rem;
+  font-size: 1rem;
+  background: #cccccc56;
+  border: none;
+  
+}
+.mobilenav .mobilemenu .search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.main-banner{
+  width: 100%;
+  
+}
+.main-banner > ul > li .background{
+  background: green;
+  width: 100%;
+}
+.main-banner > ul > li> .img{
+  width: 100%;
+}
+
+
+.welcome{
+  margin-top: auto;
+  padding: 2rem 1rem 2.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.welcome h2{
+  color: darkslategray;
+  font-size: 1.6rem;
+  padding-bottom: 1.5rem ;
+}
+.shortline{
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.line{
+  
+  width:20%;
+  height: 3px;
+  background: darkslategray;
+}
+.welcome p{
+    font-size: 1.1rem;
+}
+.welcome .mission{
+  margin-top: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: darkgreen;
+}
+.welcome .mission p{
+  
+  letter-spacing: 1px;
+  border-top: 1px solid rgba(0, 0, 0, 0.356);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+  padding: 2rem;
+}
+.welcome a{
+  text-decoration: none;
+  color: white;
+  background: burlywood;
+  padding: 0.6rem 1.3rem;
+  border-radius: 20px;
+}
+.welcome a:hover{
+
+}
+.why{
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  width: 100%;
+}
+.why h2{
+  color: darkslategray;
+  font-size: 1.6rem;
+  padding-bottom: 1.5rem ;
+}
+.why > div{
+  margin-top: 1.3rem;
+  background: white;
+  padding: 3rem 1rem;
+  width: 100%;
+}
+.why > div img {
+  height: 68px;
+  padding-bottom: 10px;
+
+}
+.why > div h4{
+  
+  font-weight: lighter;
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+
+}
+.why > div p{
+  font-size: 1.1rem;
+  
+}
+.why  a{
+  margin-top: 3rem;
+  text-decoration: none;
+  color: white;
+  background: burlywood;
+  padding: 0.6rem 1.3rem;
+  border-radius: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+  
