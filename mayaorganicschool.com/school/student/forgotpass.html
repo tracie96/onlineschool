@@ -1,0 +1,147 @@
+
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from mayaorganicschool.com/school/student/forgotpass by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 May 2020 14:55:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Forgotten Password - Maya Organic Skincare School </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="We are Maya Organics’ A team of professionals that consist of cosmetic formulator, chemist, business expert in branding and online internet marketing">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="../img/site.html">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/night-mode.css">
+    <link rel="stylesheet" href="../assets/css/framework.css">
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/icons.css">
+    <link rel="shortcut icon" href="../img/favicon.html">
+    <style>
+    @media(min-width:960px){
+        .mob{
+            display:none !important;
+        }
+    }
+    @media(max-width:960px){
+        .desk{
+            display:none !important;
+        }
+        .mob-back{
+            background:#fff !important;
+            border-bottom: 2px solid #055e4c;
+        }
+    }
+    </style>
+
+</head>
+
+
+<body>
+
+
+
+<!-- Content
+================================================== -->
+<div uk-height-viewport class="uk-flex uk-flex-middle">
+    <div class="uk-width-2-3@m uk-width-1-2@s m-auto rounded">
+        <div class="uk-child-width-1-2@m uk-grid-collapse bg-gradient-grey" uk-grid>
+
+            <!-- column one -->
+            <div class="uk-margin-auto-vertical uk-text-center uk-animation-scale-up p-3 uk-light mob-back">
+                <img src="../img/school_logo.png" style="width:200px; height:auto;" alt="Maya Organic Skincare School Logo" class="desk"/>
+                <img src="../img/mob_logo.png" style="width:400px; height:auto" alt="Maya Organic Skincare School Logo" class="mob"/>
+                <p class="desk"><br/><br/>&copy; 2018 - 2020 Maya Organic Skincare School. <br/>All rights reserved</p>
+                <p></p>
+            </div>
+
+            <!-- column two -->
+            <div class="uk-card-default p-6">
+                                <div class="my-4 uk-text-center">
+                    <h2 class="mb-0"> Reset Password!</h2>
+                    <p class="my-2">Enter your email address below.</p>
+                </div>
+                                  
+                 
+                <form method="POST" action="https://mayaorganicschool.com/school/controllers/student?t=reset_form">
+
+                    <div class="uk-form-group">
+                        <label class="uk-form-label"> Email</label>
+
+                        <div class="uk-position-relative w-100">
+                                <span class="uk-form-icon">
+                                    <i class="icon-feather-mail"></i>
+                                </span>
+                            <input class="uk-input" type="email" placeholder="name@example.com" name="email" required>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-4 uk-flex-middle uk-grid-small" uk-grid>
+                            <div class="uk-width-expand@s">
+                               
+                            </div>
+                            <div class="uk-width-auto@s">
+                                <button type="submit" class="button grey">Reset Now</button>
+                            </div>
+                        </div>
+
+                </form>
+                            </div><!--  End column two -->
+
+        </div>
+    </div>
+</div>
+
+<!-- Content -End
+================================================== -->
+
+<script>
+    // Listen for clicks in the document
+    document.addEventListener('click', function (event) {
+
+        // Check if a password selector was clicked
+        var selector = event.target.getAttribute('data-show-pw');
+        if (!selector) return;
+
+        // Get the passwords
+        var passwords = document.querySelectorAll(selector);
+
+        // Toggle visibility
+        Array.from(passwords).forEach(function (password) {
+            if (event.target.checked === true) {
+                password.type = 'text';
+            } else {
+                password.type = 'password';
+            }
+        });
+    }, false);
+</script>
+
+
+<!-- javaScripts
+================================================== -->
+<script src="../assets/js/framework.js"></script>
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/simplebar.js"></script>
+<script src="../assets/js/main.js"></script>
+
+
+</body>
+
+
+<!-- Mirrored from mayaorganicschool.com/school/student/forgotpass by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 May 2020 14:55:17 GMT -->
+</html>
