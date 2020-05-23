@@ -212,7 +212,7 @@
   font-size: 1.1rem;
   
 }
-.why  a{
+.btn{
   margin-top: 3rem;
   text-decoration: none;
   color: white;
@@ -221,6 +221,75 @@
   border-radius: 20px;
 
 }
+.courses{
+  padding: 3rem 1rem;
+}
+.courses h1{
+  color: darkslategray;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-size: 2.3rem;
+}
+.packages{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.packages > div {
+  width: 100%;
+  position: relative; 
+  border: 1px solid #cccc; 
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+
+}
+.packages > div img{
+    display: block;
+    width: 100%;
+    height: 50%;
+   
+}
+.packages > div .overlaybg{
+  position: absolute;
+  z-index: 10;
+  top:  80%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+}
+.packages > div .text{
+  width: 100%;
+  padding: 0.8rem 0.4rem;
+  text-align: start;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #ccc;
+
+}
+.packages > div .text a{
+  text-decoration: none;
+  color: darkslategray;
+  
+}
+.packages > div .price {
+  text-align: right;
+  padding:0.4rem ;
+  
+}
+.packages > div .price span{
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.555);
+  text-decoration: line-through;
+}
+.packages > div .price p{
+  color: darkslategray;
+  font-weight: bold;
+
+}
+
+
 
 
 
