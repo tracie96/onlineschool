@@ -1,3 +1,5 @@
+@import './card.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -44,7 +46,7 @@
   height: 4.2rem
 }
 .toggle-button {
-  width: 3rem;
+  width: 2.5rem;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -55,18 +57,29 @@
 .toggle-button:focus {
   outline: none;
 }
-
 .toggle-button__line {
   width: 100%;
   height: 0.22rem;
   background:  darkslategrey;
   border-radius: 6px;
   display: block;
-  margin: 0.6rem 0;
+  margin: 0.4rem 0;
 }
-
+.mobilenav {
+  position: relative;
+}
 .mobilenav .mobilemenu{
   display: none;
+}
+.mobilenav .mobilemenu.show-mobile {
+  display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    background-color: white;
+    padding: 0.5rem;
+    left: 0;
 }
 .mobilenav .mobilemenu > ul{
   padding-top: 1.6rem;
@@ -165,18 +178,18 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.356);
   padding: 2rem;
 }
-.welcome a{
+.btn{
   text-decoration: none;
   color: white;
   background: burlywood;
   padding: 0.6rem 1.3rem;
   border-radius: 20px;
+  margin: 1rem;
 }
 .welcome a:hover{
 
 }
-.why{
-  background: #f4f4f4;
+.section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -185,49 +198,73 @@
   padding: 3rem 1rem;
   width: 100%;
 }
-.why h2{
+.section.why {
+  background: #f4f4f4;
+}
+.section h2 {
   color: darkslategray;
   font-size: 1.6rem;
   padding-bottom: 1.5rem ;
 }
-.why > div{
+.section .row {
+  display: flex;
+  flex-direction: column;
+}
+.section .row .sect {
   margin-top: 1.3rem;
   background: white;
   padding: 3rem 1rem;
   width: 100%;
 }
-.why > div img {
+.section.why .sect img {
   height: 68px;
   padding-bottom: 10px;
-
 }
-.why > div h4{
-  
+.section.why .sect h4 {
   font-weight: lighter;
   font-size: 1.1rem;
   padding-bottom: 1rem;
-
 }
-.why > div p{
+.section.why .sect p {
   font-size: 1.1rem;
-  
 }
-.why  a{
+.section.why .btn {
   margin-top: 3rem;
   text-decoration: none;
   color: white;
   background: burlywood;
   padding: 0.6rem 1.3rem;
   border-radius: 20px;
-
+}
+.section.courses .row .course-card {
+  display: flex;
+  flex-direction: column;
+}
+.section.courses .row .course-card .course-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.section.courses .row .course-card .course-img img {
+  width: 100%;
+}
+.section.courses .row .course-card .course-info {
+  padding: 1rem;
+}
+.section.courses .row .course-card .course-info .course-title {
+  padding: 0.5rem 0;
+  font-size: 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.section.courses .row .course-card .course-info .course-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
 }
 
-
-
-
-
-
-
-
-
-  
+@media screen and (min-width: 768px) {
+  .section .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
