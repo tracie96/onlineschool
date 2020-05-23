@@ -1,13 +1,17 @@
+@import './variables.css';
 @import './card.css';
+@import './constants.css';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 .top-header {
-  background-color: darkslategrey;
+  background-color: var(--green);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -104,13 +108,11 @@
 .mobilenav .mobilemenu .search-container{
   width: 100%;
 }
-
 .mobilenav .mobilemenu input[type=text]{
   padding: 1rem;
   font-size: 1rem;
   background: #cccccc56;
   border: none;
-  
 }
 .mobilenav .mobilemenu .search-container button {
   padding: 6px 10px;
@@ -123,7 +125,6 @@
 }
 .main-banner{
   width: 100%;
-  
 }
 .main-banner > ul > li .background{
   background: green;
@@ -132,8 +133,6 @@
 .main-banner > ul > li> .img{
   width: 100%;
 }
-
-
 .welcome{
   margin-top: auto;
   padding: 2rem 1rem 2.5rem 1rem;
@@ -142,25 +141,6 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-}
-.welcome h2{
-  color: darkslategray;
-  font-size: 1.6rem;
-  padding-bottom: 1.5rem ;
-}
-.shortline{
-  text-align: center;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 2rem;
-}
-.line{
-  
-  width:20%;
-  height: 3px;
-  background: darkslategray;
 }
 .welcome p{
     font-size: 1.1rem;
@@ -177,14 +157,6 @@
   border-top: 1px solid rgba(0, 0, 0, 0.356);
   border-bottom: 1px solid rgba(0, 0, 0, 0.356);
   padding: 2rem;
-}
-.btn{
-  text-decoration: none;
-  color: white;
-  background: burlywood;
-  padding: 0.6rem 1.3rem;
-  border-radius: 20px;
-  margin: 1rem;
 }
 .welcome a:hover{
 
@@ -260,6 +232,12 @@
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 0;
+}
+.section.subscribe {
+  background-color: var(--green);
+}
+.section.subscribe .title {
+  color: var(--white);
 }
 
 @media screen and (min-width: 768px) {

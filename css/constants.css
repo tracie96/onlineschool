@@ -1,0 +1,28 @@
+@import './variables.css';
+
+.btn{
+  text-decoration: none;
+  color: white;
+  background: burlywood;
+  padding: 0.6rem 1.3rem;
+  border-radius: 20px;
+  margin: 1rem;
+}
+.title {
+  color: var(--green);
+  font-size: 1.6rem;
+  padding-bottom: 1.5rem ;
+}
+.shortline{
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.line{ 
+  width:20%;
+  height: 3px;
+  background: darkslategray;
+}
