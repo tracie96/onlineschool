@@ -93,26 +93,66 @@ body {
 .desktopmenu > ul> li>a:hover{
   opacity: 0.2;
 }
-
 .desktopsearch-bar{
   display: none;
   
-
+  
 }
 .desktopsearch-bar button{
-  display: relative;
+  position: relative;
 }
 .desktopsearch-bar .toggler{
   position: absolute;
-  top: 0;
-  right: 0;
-  
-  
+  z-index: 3;
+  height: 30px;
+  width: 30px;
+  opacity: 0;
+}
+.desktopsearch-bar .toggler:checked ~ .outofthescreen{
+    visibility: visible;
+}
+.desktopsearch-bar .toggler:checked ~ .outofthescreen > div{
+  transform: scale(1);
+  transition-duration: 0.8s;
+}
+.desktopsearch-bar .toggler:checked ~ .outofthescreen > div>div{
+  opacity: 1;
+}
 
-
+.desktopsearch-bar .outofthescreen{
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+     width: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.desktopsearch-bar .outofthescreen > div{
+  background: rgba(0, 0, 0, 0.897);
+  width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all .4s ease;
+    
+}
+.desktopsearch-bar .outofthescreen > div > div{
+  text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity .4s ease;
 }
 .desktopsearch-bar button {
-  padding: 6px 10px;
+  padding: 8px 10px;
   margin-top: 8px;
   margin-right: 16px;
   background: darkslategray;
@@ -120,6 +160,11 @@ body {
   font-size: 17px;
   border: none;
   cursor: pointer;
+}
+.desktopsearch-bar .outofthescreen input[type=text]{
+  padding: 0.8rem 1.2rem;
+  outline: none;
+
 }
 .mobilenav {
   position: relative;
@@ -177,6 +222,7 @@ body {
 .main-banner{
   position: relative;
   width: 100%;
+  z-index: -1;
 }
 .main-banner img{
   width: 100%;
@@ -541,6 +587,7 @@ input[type=email]{
 }
 footer{
   margin-top: 2rem;
+  
 }
 
 .footer-container{
@@ -559,8 +606,6 @@ footer{
   padding-bottom: 0.8rem;
   font-size: .9rem
 }
-
-
 .footer-container .footer-courses img{
   height: 40px;
 }
