@@ -10,6 +10,9 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+.res-pad {
+  padding: 0.5rem;
+}
 .top-header {
   background-color: var(--green);
   width: 100%;
@@ -17,13 +20,15 @@ body {
   justify-content: space-between;
   padding: 0.8rem .6rem
 }
-.top-header .phone span{
+.top-header .contact-info {
+  display: flex;
+}
+.top-header .contact-info span{
   color: white;
   font-size: 12px;
 }
-.top-header .top-address{
+.top-header .contact-info .top-address{
   display: none;
-  
 }
 .top-header > div > ul >li{
   list-style: none;
@@ -48,11 +53,13 @@ body {
   align-items: center;
   width: 100%;
 }
-.mobilenav .logo{
-  padding-right: 2rem;
-  
+.mobile-web-nav {
+  position: relative;
 }
-.mobilenav .logo img{
+.mobile-web-nav .logo{
+  padding-right: 2rem;
+}
+.mobile-web-nav .logo img{
   height: 4.2rem
 }
 .toggle-button {
@@ -77,7 +84,6 @@ body {
   margin: 0.4rem 0;
 }
 .desktopmenu{
-  
   display: none;
 }
 .desktopmenu > ul > li{
@@ -110,10 +116,10 @@ body {
 .mobilenav {
   position: relative;
 }
-.mobilenav .mobilemenu{
+.mobile-web-nav .mobilemenu{
   display: none;
 }
-.mobilenav .mobilemenu.show-mobile {
+.mobile-web-nav .mobilemenu.show-mobile {
   display: flex;
     flex-direction: column;
     position: absolute;
@@ -123,10 +129,10 @@ body {
     padding: 0.5rem;
     left: 0;
 }
-.mobilenav .mobilemenu > ul{
+.mobile-web-nav .mobilemenu > ul{
   padding-top: 1.6rem;
 }
-.mobilenav .mobilemenu > ul >li{
+.mobile-web-nav .mobilemenu > ul >li{
   list-style: none;
   text-transform: uppercase;
   padding: 1.3rem;
@@ -135,23 +141,23 @@ body {
   border: 1px solid #cccccc65;
   background: #cccccc56;
 }
-.mobilenav .mobilemenu > ul >li > a{
+.mobile-web-nav .mobilemenu > ul >li > a{
   color: rgba(0, 0, 0, 0.705);
   text-decoration: none;
 }
-.mobilenav .mobilemenu > ul >li > a span{
+.mobile-web-nav .mobilemenu > ul >li > a span{
   color: rgba(255, 255, 255, 0.603);
 }
-.mobilenav .mobilemenu .search-container{
+.mobile-web-nav .mobilemenu .search-container{
   width: 100%;
 }
-.mobilenav .mobilemenu input[type=text]{
+.mobile-web-nav .mobilemenu input[type=text]{
   padding: 1rem;
   font-size: 1rem;
   background: #cccccc56;
   border: none;
 }
-.mobilenav .mobilemenu .search-container button {
+.mobile-web-nav .mobilemenu .search-container button {
   padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
@@ -545,8 +551,6 @@ footer{
   padding-bottom: 0.8rem;
   font-size: .9rem
 }
-
-
 .footer-container .footer-courses img{
   height: 40px;
 }
@@ -590,6 +594,26 @@ footer{
 
 
 @media screen and (min-width: 768px) {
+  .res-pad {
+    padding: 1rem 5rem;
+  }
+  .main-header .mobile-web-nav .toggle-button {
+    display: none;
+  }
+  .main-header .mobile-web-nav .desktopmenu {
+    display: flex;
+  }
+  .main-header .mobile-web-nav .desktopmenu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .main-header .mobile-web-nav .desktopmenu ul li {
+    display: flex;
+    padding: 0 0.5rem;
+  }
   .section .row {
     flex-direction: row;
   }
@@ -609,11 +633,15 @@ footer{
   }
 }
 @media (min-width: 860px){
-  .top-header .top-address{
-    display: block;
+  .top-header .contact-info .top-address{
+    display: unset;
+    padding-left: 1.5rem;
   }
 }
 @media (min-width: 990px){
+  .res-pad {
+    padding: 1rem 10rem;
+  }
   .toggle-button{
     display: none;
   }
