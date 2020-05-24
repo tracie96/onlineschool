@@ -96,6 +96,20 @@ body {
 
 .desktopsearch-bar{
   display: none;
+  
+
+}
+.desktopsearch-bar button{
+  display: relative;
+}
+.desktopsearch-bar .toggler{
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  
+
+
 }
 .desktopsearch-bar button {
   padding: 6px 10px;
