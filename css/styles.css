@@ -20,8 +20,15 @@ body {
   justify-content: space-between;
   padding: 0.8rem .6rem
 }
-.top-header .phone span{
+.top-header .contact-info {
+  display: flex;
+}
+.top-header .contact-info span{
   color: white;
+  font-size: 12px;
+}
+.top-header .contact-info .top-address{
+  display: none;
 }
 .top-header > div > ul >li{
   list-style: none;
@@ -49,6 +56,9 @@ body {
 .mobile-web-nav {
   position: relative;
 }
+.mobile-web-nav .logo{
+  padding-right: 2rem;
+}
 .mobile-web-nav .logo img{
   height: 4.2rem
 }
@@ -60,6 +70,7 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   vertical-align: middle;
+
 }
 .toggle-button:focus {
   outline: none;
@@ -72,8 +83,38 @@ body {
   display: block;
   margin: 0.4rem 0;
 }
-.web-menu {
+.desktopmenu{
   display: none;
+}
+.desktopmenu > ul > li{
+  display: inline-block;
+  padding: 0 0.4rem;
+  text-transform: capitalize;
+}
+.desktopmenu > ul> li>a{
+  color: darkslategray;
+  text-decoration: none;
+  font-weight: 500;
+}
+.desktopmenu > ul> li>a:hover{
+  opacity: 0.2;
+}
+
+.desktopsearch-bar{
+  display: none;
+}
+.desktopsearch-bar button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: darkslategray;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.mobilenav {
+  position: relative;
 }
 .mobile-web-nav .mobilemenu{
   display: none;
@@ -99,7 +140,6 @@ body {
   z-index: -2;
   border: 1px solid #cccccc65;
   background: #cccccc56;
- /* box-shadow: inset 0 0 10px transparent;;*/
 }
 .mobile-web-nav .mobilemenu > ul >li > a{
   color: rgba(0, 0, 0, 0.705);
@@ -127,15 +167,46 @@ body {
   cursor: pointer;
 }
 .main-banner{
+  position: relative;
   width: 100%;
 }
-.main-banner > ul > li .background{
-  background: green;
+.main-banner img{
   width: 100%;
 }
-.main-banner > ul > li> .img{
-  width: 100%;
+.header-overlay-text{
+  position: absolute;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.459);
+  padding: 3rem 1rem;
+  color: white;
+  text-align: center;
+
 }
+.header-overlay-text h1{
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.header-overlay-text p{
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.header-overlay-text a{
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: .8rem 1.5rem;
+  border-radius: 20px;
+  transition: all .4s ease;
+}
+.header-overlay-text a:hover{
+  background: burlywood;
+}
+
 .welcome{
   margin-top: auto;
   padding: 2rem 1rem 2.5rem 1rem;
@@ -342,8 +413,6 @@ input[type=email]{
   align-items: center;
   padding: 3rem 1.5rem;
   width: 100%;
-  
-
 }
 .benefits > div h1{
   color: darkslategray;
@@ -369,8 +438,7 @@ input[type=email]{
 }
 .studentProject h1 span{
   color: darkgoldenrod;
-  border-bottom: 3px solid darkslategray;
-  padding-bottom: 1rem;
+  
 }
 .projectdemo {
     padding: 3rem 1rem ;
@@ -414,9 +482,6 @@ input[type=email]{
   width: 50px;
   border-radius: 50%;
 }
-
-
-
 
 .in-place-of-video > div{
   width: 100%;
@@ -486,10 +551,8 @@ footer{
   padding-bottom: 0.8rem;
   font-size: .9rem
 }
-
-
 .footer-container .footer-courses img{
-  height: 50px;
+  height: 40px;
 }
 .footer-btn{
   margin-top: 1rem;
@@ -530,12 +593,6 @@ footer{
 }
 
 
-
-
-
-
-
-
 @media screen and (min-width: 768px) {
   .res-pad {
     padding: 1rem 5rem;
@@ -543,31 +600,70 @@ footer{
   .main-header .mobile-web-nav .toggle-button {
     display: none;
   }
-  .main-header .mobile-web-nav .web-menu {
+  .main-header .mobile-web-nav .desktopmenu {
     display: flex;
   }
-  .main-header .mobile-web-nav .web-menu ul {
+  .main-header .mobile-web-nav .desktopmenu ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
     width: 100%;
   }
-  .main-header .mobile-web-nav .web-menu ul li {
+  .main-header .mobile-web-nav .desktopmenu ul li {
     display: flex;
     padding: 0 0.5rem;
   }
   .section .row {
     flex-direction: row;
-    flex-wrap: wrap;
   }
+  .why .row >div{
+    margin: 0 0.4rem;
+  }
+  .projectdemo{
+    flex-direction: row;
+  }
+  
   .demoimgs > div img{
-    width: 50%;
+    width: 80%;
+  }
+  .footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
-
-@media screen and (min-width: 980px) {
+@media (min-width: 860px){
+  .top-header .contact-info .top-address{
+    display: unset;
+    padding-left: 1.5rem;
+  }
+}
+@media (min-width: 990px){
   .res-pad {
     padding: 1rem 10rem;
   }
+  .toggle-button{
+    display: none;
+  }
+  .desktopmenu{
+    display: block;
+  }
+  .desktopsearch-bar{
+    display: block;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-container > div {
+    margin: 0 0.5rem
+  }
+  .copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
 }
+
