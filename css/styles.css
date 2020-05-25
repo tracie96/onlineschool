@@ -88,9 +88,13 @@ body {
 }
 .desktopmenu > ul > li{
   display: inline-block;
-  padding: 0 0.4rem;
+  padding: 0rem 0.5rem;
   text-transform: capitalize;
 }
+/*.active, .desktopmenu > ul > li:hover{
+  border-bottom: 2px solid darkslategray;
+}*/
+
 .desktopmenu > ul> li>a{
   color: darkslategray;
   text-decoration: none;
@@ -99,11 +103,30 @@ body {
 .desktopmenu > ul> li>a:hover{
   opacity: 0.2;
 }
+.desktopmenu .dropdownmenu1{
+  display: none;
+  
+}
+.desktopmenu > ul > li:hover .dropdownmenu1{
+  display: block;
+  position: absolute;
+  background: darkslategray;
+  margin-top:15px ;
+  margin-bottom: 15px;
+}
+.desktopmenu > ul > li:hover .dropdownmenu1 > ul{
+  display: block;
+  margin: 10px;
+}
+.desktopmenu > ul > li:hover .dropdownmenu1 >ul>li{
+  min-width: 150px;
+  padding: 1rem;
+  font-size: .8rem;
+}
+
 
 .desktopsearch-bar{
   display: none;
-  
-  
 }
 .desktopsearch-bar button{
   position: relative;
