@@ -15,15 +15,12 @@
       integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <main>
       <header>
-        <div class="top-header res-pad">
+        <div class="top-header">
           <div class="contact-info">
             <span>+234 812 844 8323</span>
             <span class="top-address"> 1a, Harvey Road, off Herbert Macaulay Way, Behind Domino's Pizza, Yaba, Lagos, Nigeria.</span>
@@ -45,14 +42,14 @@
                 ></a>
               </li>
               <li class="icons">
-                <a href="#"><i class="far fa-user"></i>Login</a>
+                <a href="#"><i class="far fa-user"></i> Login</a>
               </li>
               <li class="icons"><a href="#">Register</a></li>
             </ul>
           </div>
         </div>
 
-        <div class="main-header res-pad">
+        <div class="main-header">
           <nav class="mobile-web-nav">
             <div class="logoandtoggle">
               <div class="logo">
@@ -61,33 +58,32 @@
               <!---desktop menu-->
               <div class="desktopmenu">
                 <ul>
-                  <li><a href="#">home</a></li>
+                  <li class="active"><a href="#">home</a></li>
                   <li><a href="#">start here</a></li>
-                  <li><a href="#">courses</a></li>
+                  <li><a href="#">courses</a>
+                    <div class="dropdownmenu1"> 
+                      <ul>
+                        <li><a href>Certificate in formulating organic..</a></li>
+                        <li><a href> Certificate organic hair care pro..</a></li>
+                        <li><a href>Beginners soap making course</a></li>
+                  
+                      </ul>
+
+                    </div>
+                  </li>
                   <li><a href="#">projects</a></li>
-                  <li><a href="#">help</a></li>
+                  <li><a href="#">help</a>
+                    <div class="dropdownmenu1"> 
+                      <ul>
+                        <li><a href>FAQ</a></li>
+                        <li><a href>Visit Our blog</a></li>
+              
+                      </ul></li>
                   <li><a href="#">about us</a></li>
-                  <li>
+                  <li >
                     <a href="#"><span>Enroll Now</span></a>
                   </li>
                 </ul>
-              </div>
-              <div class="desktopsearch-bar">
-                <input type="checkbox" class="toggler">
-                <button type="submit"><i class="fa fa-search">
-                </i></button>
-                <div class="outofthescreen">
-                <div>
-                  <div>
-                    <form action="">
-                      <input type="text" placeholder="type to search.." name="search" />
-                      <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-
-                  </div>
-                </div>
-              </div>
-                
               </div>
 
             <!---hambuger toggle button-->
@@ -134,9 +130,14 @@
         </div>
 
       </header>
+      <div class="topmost-whatsapp">
+        <a href="http://whatsapp.com"
+              ><i class="fab fa-whatsapp"></i>
+      </a>
+      </div>
       
         
-        <!--div class="main-banner">
+        <!---div class="maindesktop-banner">
           <div class="banner-inner text">
             <h1>STUDY WITH US</h1>
             <p>Learn how to create high perfoermance skincare products that work effectively and beceom your own Boss</p>
@@ -144,7 +145,7 @@
           </div>
           
         </div-->
-        <div class="welcome res.pad">
+        <div class="welcome res-pad">
         <h2>Welcome to Skin Essence School!</h2>
         <div class="shortline">
           <!-- <div class="line"></div> -->
@@ -260,9 +261,6 @@
         </div>
         <a href="#" class="btn">ENROLL NOW</a>
       </div>
-      <div class="section subscribe res-pad">
-        <h2 class="title">Become a natural skincare formular</h2>
-      </div>
       <div class="signup">
         <h1>Become a natural skincare formulator!</h1>
         <p>Sign up for our free newsletter and get our best product making tips, expert formulating advice and course offers…</p>
@@ -287,72 +285,19 @@
 
       </div>
     </div>
-    <div class="studentProject">
-      <h1>Maya Past <span>Students'</span> Projects</h1>
-      <div class="projectdemo">
-        <div class=demoimgs>
-          <div><img src="./img/project1.jpeg"><div class="projectoverlay">
-            <div class="circle"></div>
-          </div>
-          </div>
-
-          <div><img src="./img/project2.jpeg"><div class="projectoverlay">
-            <div class="circle"></div>
-          </div>
-          </div>
-
-          <div><img src="./img/project3.jpeg"><div class="projectoverlay">
-            <div class="circle"></div>
-          </div>
-          </div>
-
-          <div><img src="./img/project4.jpeg"><div class="projectoverlay">
-            <div class="circle"></div>
-          </div>
-          </div>
-
-          <div><img src="./img/project5.jpeg"><div class="projectoverlay">
-            <div class="circle"></div>
-          </div></div>
-
-          <div><img src="./img/project6.jpeg"><div class="projectoverlay">
-            <div class="circle"></div>
-          </div></div>
-
-          <div><img src="./img/project7.jpeg"><div class="projectoverlay">
-            <div class="circle"></div>
-          </div></div>
-
-          <div><img src="./img/project8.jpeg"><div class="projectoverlay">
-            <div class="circle"></div>
-          </div></div>
-
-        </div>
-        <div class="in-place-of-video">
-          <div><img src="./img/photo-1506003094589-53954a26283f.jpg"></div>
-        </div>
-      </div>
-      <a href="#" class="btn">VIEW MORE</a>
-      
-    </div>
+   
     <div class="store">
       <div class="storeoverlay">
-        <div class="text">
+        <div class="text res-pad">
           <h1>SHOP ON MAYA ORGANICS STORE</h1>
           <p>Purchase organic products from different categories such as Skincare, Hair Care, Soap, Fitness and Female Healthcare formulated by Maya Organics</p>
           <a href="#">Start shopping</a>
         </div>
       </div>
-
     </div>
-
-    <div class="comments-from-people"></div>
-
-    <div class="instagram-links">
-    
-    </div>
-    <footer>
-      <div class="footer-container">
+  </main>
+  <footer>
+    <div class="footer-container res-pad">
       <div class="footer-about">
         <h4>ABOUT</h4>
         <p>We are Maya Organics!!! Our school consists of professionals and top notch instructors who are cosmetic formulators, chemists, business development experts, digital branding and online marketing experts.</p>
@@ -401,20 +346,25 @@
               ><i class="fab fa-facebook"></i
             ></a>
           </li>
+          <li class="icons">
+            <a href="http://linkedin.com"
+              ><i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="icons">
+            <a href="http://youtube.com"
+              ><i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="icons">
+            <a href="http://whatsapp.com"
+              ><i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
-
-  
-
-
-    </div>
-
-
-    </footer>
-
-
-    </main>
-    <script src="./js/script.js"></script>
+  </footer>
+  <script src="./js/script.js"></script>
   </body>
 </html>
