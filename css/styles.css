@@ -111,8 +111,7 @@ body {
   display: block;
   position: absolute;
   background: darkslategray;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  top: 3rem;
 }
 .desktopmenu > ul > li:hover .dropdownmenu1 > ul {
   display: block;
@@ -122,6 +121,9 @@ body {
   min-width: 150px;
   padding: 1rem;
   font-size: 0.8rem;
+}
+.desktopmenu > ul > li:hover .dropdownmenu1 > ul > li a {
+  color: #f4f4f4;
 }
 
 .desktopsearch-bar {
