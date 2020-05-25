@@ -99,6 +99,7 @@ body {
 .desktopmenu > ul> li>a:hover{
   opacity: 0.2;
 }
+
 .desktopsearch-bar{
   display: none;
   
@@ -106,6 +107,7 @@ body {
 }
 .desktopsearch-bar button{
   position: relative;
+  
 }
 .desktopsearch-bar .toggler{
   position: absolute;
@@ -158,7 +160,7 @@ body {
     transition: opacity .4s ease;
 }
 .desktopsearch-bar button {
-  padding: 8px 10px;
+  padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
   background: darkslategray;
@@ -265,6 +267,23 @@ body {
 }
 .header-overlay-text a:hover{
   background: burlywood;
+}
+.topmost-whatsapp{
+  position: fixed;
+  z-index: 20;
+  top: 85%;
+  right: 5%;
+  background-color: #25D366;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topmost-whatsapp a{
+  font-size: 1.5rem;
+  color: white;
 }
 
 .welcome{
@@ -706,13 +725,12 @@ footer{
   .toggle-button{
     display: none;
   }
-  .desktopmenu{
-    display: block;
-  }
   .desktopsearch-bar{
     display: block;
   }
-  
+  .desktopmenu{
+    display: block;
+  }
   .footer-container {
     display: flex;
     flex-direction: row;
@@ -726,5 +744,14 @@ footer{
     align-items: center;
   }
   
+
+  
+}
+@media(min-width:1260px){
+  .desktopmenu > ul>li>a span{
+    background: darkslategray;
+    color: white;
+    padding: 0.4rem .6rem;
+  }
 }
 
