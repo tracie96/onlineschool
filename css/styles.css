@@ -8,7 +8,9 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
 }
 .res-pad {
   padding: 0.5rem;
@@ -622,10 +624,6 @@ input[type="email"] {
   margin: 1rem;
   font-size: 1.1rem;
 }
-footer {
-  margin-top: 2rem;
-}
-
 .footer-container {
   background: burlywood;
   padding: 3rem 1rem;
@@ -685,7 +683,7 @@ footer {
   .res-pad {
     padding: 2rem 5rem;
   }
-  .top-header, .main-header {
+  .top-header, .main-header, .copyright {
     padding: 1rem 5rem;
   }
   .main-header .mobile-web-nav .toggle-button {
@@ -745,7 +743,7 @@ footer {
   .desktopmenu {
     display: block;
   }
-  .top-header, .main-header {
+  .top-header, .main-header, .copyright {
     padding: 1rem 10rem;
   }
   .footer-container {
