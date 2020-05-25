@@ -1,0 +1,17 @@
+@import "./styles.css";
+h1{
+    color: var(--green);
+}
+
+.course-intro p{
+    font-size: 1rem;
+}
+.course-tittle{
+    padding: 3rem 1rem;
+    background: #f4f4f4;
+    font-weight: 400;
+}
+.course-tittle h2{
+    margin-bottom: 1rem;
+}
+
