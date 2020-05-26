@@ -10,11 +10,14 @@
 .course-intro p{
     font-size: 1rem;
 }
+.section .course-info span{
+    color: var(--green);
+    font-weight: bold;
+}
 .highlights{
     background: #f4f4f4;
     padding: 3rem 1rem;
-    
-    
+      
 
 }
 .highlights h2{
@@ -126,5 +129,12 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+}
+@media(min-width: 900px){
+    .section .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
     }
 }
