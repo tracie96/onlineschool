@@ -1,6 +1,7 @@
 @import "./variables.css";
 @import "./card.css";
 @import "./constants.css";
+@import "./form.css";
 
 * {
   margin: 0;
@@ -92,10 +93,6 @@ body {
   padding: 0rem 0.5rem;
   text-transform: capitalize;
 }
-/*.active, .desktopmenu > ul > li:hover{
-  border-bottom: 2px solid darkslategray;
-}*/
-
 .desktopmenu > ul > li > a {
   color: darkslategray;
   text-decoration: none;
@@ -111,8 +108,7 @@ body {
   display: block;
   position: absolute;
   background: darkslategray;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  top: 3rem;
 }
 .desktopmenu > ul > li:hover .dropdownmenu1 > ul {
   display: block;
@@ -122,6 +118,9 @@ body {
   min-width: 150px;
   padding: 1rem;
   font-size: 0.8rem;
+}
+.desktopmenu > ul > li:hover .dropdownmenu1 > ul > li a {
+  color: #f4f4f4;
 }
 
 .desktopsearch-bar {
@@ -253,10 +252,13 @@ body {
   max-height: 600px;
   overflow: hidden;
 }
+.main-banner.inner-page {
+  max-height: 300px;
+}
 .main-banner img {
   width: 100%;
 }
-.header-overlay {
+.headeroverlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -678,6 +680,20 @@ input[type="email"] {
 .copyright > div > ul > li > a:hover {
   color: burlywood;
 }
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about .mission-vision {
+  display: flex;
+  flex-direction: column;
+}
+.about .mission-vision .mission-content {
+  padding: 1rem 0;
+}
+.contact-form {
+  flex: 0 0 60%;
+}
 
 @media screen and (min-width: 768px) {
   .res-pad {
@@ -701,7 +717,11 @@ input[type="email"] {
   }
   .main-header .mobile-web-nav .desktopmenu ul li {
     display: flex;
-    padding: 0 0.5rem;
+    padding: 0 1.5rem;
+  }
+  
+  .main-header .mobile-web-nav .desktopmenu ul li:last-child {
+    padding-right: 0;
   }
   .header-overlay-text {
     margin: 0 25%;
@@ -722,6 +742,15 @@ input[type="email"] {
   .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .about {
+    flex-direction: row;
+  }
+  .about .about-content {
+    padding-right: 1rem;
+  }
+  .about .mission-vision {
+    padding-left: 1rem;
   }
 }
 @media (min-width: 860px) {
