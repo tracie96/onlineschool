@@ -2,6 +2,7 @@
 @import "./card.css";
 @import "./constants.css";
 @import "./form.css";
+@import "./faq.css";
 
 * {
   margin: 0;
@@ -680,15 +681,15 @@ input[type="email"] {
 .copyright > div > ul > li > a:hover {
   color: burlywood;
 }
-.about {
+.page-content {
   display: flex;
   flex-direction: column;
 }
-.about .mission-vision {
+.page-content .mission-vision {
   display: flex;
   flex-direction: column;
 }
-.about .mission-vision .mission-content {
+.page-content .mission-vision .mission-content {
   padding: 1rem 0;
 }
 .contact-form {
@@ -743,13 +744,13 @@ input[type="email"] {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .about {
+  .page-content {
     flex-direction: row;
   }
-  .about .about-content {
+  .page-content .about-content {
     padding-right: 1rem;
   }
-  .about .mission-vision {
+  .page-content .mission-vision {
     padding-left: 1rem;
   }
 }
