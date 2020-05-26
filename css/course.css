@@ -1,12 +1,8 @@
-@import "./styles.css";
+@import "./variables.css";
 
-.top-header{
-    display: none;
-}
 .course-intro h1{
     color: var(--green);
 }
-
 .course-intro p{
     font-size: 1rem;
 }
@@ -17,8 +13,6 @@
 .highlights{
     background: #f4f4f4;
     padding: 3rem 1rem;
-      
-
 }
 .highlights h2{
     color: var(--green);
@@ -101,22 +95,8 @@
 .connect .storeoverlay .text .icons> div a:hover{
     transform: translate(-20%);
 }
-.footer-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-}
-@media (max-width: 480px){
-    .footer-container{
-        display: flex;
-        flex-direction: column;
-    }
-}
 
-@media(min-width:750px){
-    .top-header{
-        display: block;
-    }
+@media(min-width:768px){
     .hightlightlist{
         flex-direction: row;
     }
