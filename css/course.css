@@ -3,9 +3,12 @@
 .course-intro h1{
     color: var(--green);
 }
-
 .course-intro p{
     font-size: 1rem;
+}
+.section .course-info span{
+    color: var(--green);
+    font-weight: bold;
 }
 .highlights{
     background: #f4f4f4;
@@ -99,5 +102,19 @@
     }
     .hightlightlist > div{
         margin: 0 0.5rem;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(min-width: 900px){
+    .section .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
     }
 }
