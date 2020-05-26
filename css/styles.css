@@ -695,6 +695,10 @@ input[type="email"] {
 .contact-form {
   flex: 0 0 60%;
 }
+.contact-form .form input,
+.contact-form .form textarea {
+  width: 100%;
+}
 .accordion {
   margin: 1rem 0;
   width: 100%;
@@ -733,6 +737,8 @@ input[type="email"] {
   }
   .section .row {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .why .row > div {
     margin: 0 0.4rem;
