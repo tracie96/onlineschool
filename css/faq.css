@@ -1,6 +1,6 @@
 @import "./variables.css";
 
-input {
+.accordion-input {
   position: absolute;
   opacity: 0;
   z-index: -1;
@@ -60,14 +60,14 @@ input {
   background: #1a252f;
 }
 
-input:checked + .tab-label {
+.accordion-input:checked + .tab-label {
   background: #1a252f;
 }
-input:checked + .tab-label::after {
+.accordion-input:checked + .tab-label::after {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-input:checked ~ .tab-content {
+.accordion-input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
 }
