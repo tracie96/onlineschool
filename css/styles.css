@@ -3,6 +3,7 @@
 @import "./constants.css";
 @import "./form.css";
 @import "./faq.css";
+@import "./course.css";
 
 * {
   margin: 0;
