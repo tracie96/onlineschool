@@ -2,6 +2,8 @@
 @import "./card.css";
 @import "./constants.css";
 @import "./form.css";
+@import "./faq.css";
+@import "./course.css";
 
 * {
   margin: 0;
@@ -126,7 +128,7 @@ body {
 .desktopsearch-bar {
   display: none;
 }
-.desktopsearch-bar button {
+/*.desktopsearch-bar button {
   position: relative;
 }
 .desktopsearch-bar .toggler {
@@ -191,7 +193,7 @@ body {
 .desktopsearch-bar .outofthescreen input[type="text"] {
   padding: 0.8rem 1.2rem;
   outline: none;
-}
+}*/
 .mobilenav {
   position: relative;
 }
@@ -419,7 +421,7 @@ body {
   padding-bottom: 3rem;
   font-size: 2.3rem;
 }
-.packages {
+/*packages {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -470,7 +472,7 @@ body {
 .packages > div .price p {
   color: darkslategray;
   font-weight: bold;
-}
+}*/
 .signup {
   background: darkslategray;
   padding: 3rem 1rem;
@@ -521,7 +523,7 @@ input[type="email"] {
   padding: 0.5rem;
   font-size: 1.1rem;
 }
-.studentProject {
+/*.studentProject {
   background: #f4f4f4;
   padding: 2rem 1rem;
   text-align: center;
@@ -586,7 +588,7 @@ input[type="email"] {
 }
 .projectoverlay:hover {
   opacity: 1;
-}
+}*/
 
 .store {
   width: 100%;
@@ -680,19 +682,27 @@ input[type="email"] {
 .copyright > div > ul > li > a:hover {
   color: burlywood;
 }
-.about {
+.page-content {
   display: flex;
   flex-direction: column;
 }
-.about .mission-vision {
+.page-content .mission-vision {
   display: flex;
   flex-direction: column;
 }
-.about .mission-vision .mission-content {
+.page-content .mission-vision .mission-content {
   padding: 1rem 0;
 }
 .contact-form {
   flex: 0 0 60%;
+}
+.contact-form .form input,
+.contact-form .form textarea {
+  width: 100%;
+}
+.accordion {
+  margin: 1rem 0;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -728,6 +738,8 @@ input[type="email"] {
   }
   .section .row {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .why .row > div {
     margin: 0 0.4rem;
@@ -743,13 +755,13 @@ input[type="email"] {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .about {
+  .page-content {
     flex-direction: row;
   }
-  .about .about-content {
+  .page-content .about-content {
     padding-right: 1rem;
   }
-  .about .mission-vision {
+  .page-content .mission-vision {
     padding-left: 1rem;
   }
 }
