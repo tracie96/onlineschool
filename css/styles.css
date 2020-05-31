@@ -129,7 +129,7 @@ body {
 .desktopsearch-bar {
   display: none;
 }
-.desktopsearch-bar button {
+/*.desktopsearch-bar button {
   position: relative;
 }
 .desktopsearch-bar .toggler {
@@ -194,7 +194,7 @@ body {
 .desktopsearch-bar .outofthescreen input[type="text"] {
   padding: 0.8rem 1.2rem;
   outline: none;
-}
+}*/
 .mobilenav {
   position: relative;
 }
@@ -422,7 +422,7 @@ body {
   padding-bottom: 3rem;
   font-size: 2.3rem;
 }
-.packages {
+/*packages {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -473,7 +473,7 @@ body {
 .packages > div .price p {
   color: darkslategray;
   font-weight: bold;
-}
+}*/
 .signup {
   background: darkslategray;
   padding: 3rem 1rem;
@@ -524,7 +524,7 @@ input[type="email"] {
   padding: 0.5rem;
   font-size: 1.1rem;
 }
-.studentProject {
+/*.studentProject {
   background: #f4f4f4;
   padding: 2rem 1rem;
   text-align: center;
@@ -589,7 +589,7 @@ input[type="email"] {
 }
 .projectoverlay:hover {
   opacity: 1;
-}
+}*/
 
 .store {
   width: 100%;
@@ -792,6 +792,24 @@ input[type="email"] {
   .copyright {
     padding: 1rem 10rem;
   }
+  .welcome .center-contentAndvideo{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+
+  }
+  .welcomenote{
+    margin-right: 1rem;
+  }
+  .welcomevideo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+  }
+    
+  
+
   .footer-container {
     display: flex;
     flex-direction: row;
