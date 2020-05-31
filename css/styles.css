@@ -787,6 +787,24 @@ input[type="email"] {
   .top-header, .main-header, .copyright {
     padding: 1rem 10rem;
   }
+  .welcome .center-contentAndvideo{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+
+  }
+  .welcomenote{
+    margin-right: 1rem;
+  }
+  .welcomevideo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+  }
+    
+  
+
   .footer-container {
     display: flex;
     flex-direction: row;
