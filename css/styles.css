@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.5;
   font-size: 16px;
 }
@@ -351,10 +351,10 @@ body {
   width: 100%;
 }
 .section.why {
-  background: #f4f4f4;
+  background: var(--green)
 }
 .section h2 {
-  color: darkslategray;
+  color: white;
   font-size: 1.6rem;
   padding-bottom: 1.5rem;
 }
@@ -710,7 +710,9 @@ input[type="email"] {
   .res-pad {
     padding: 2rem 5rem;
   }
-  .top-header, .main-header, .copyright {
+  .top-header,
+  .main-header,
+  .copyright {
     padding: 1rem 5rem;
   }
   .main-header .mobile-web-nav .toggle-button {
@@ -730,7 +732,7 @@ input[type="email"] {
     display: flex;
     padding: 0 1.5rem;
   }
-  
+
   .main-header .mobile-web-nav .desktopmenu ul li:last-child {
     padding-right: 0;
   }
@@ -785,7 +787,9 @@ input[type="email"] {
   .desktopmenu {
     display: block;
   }
-  .top-header, .main-header, .copyright {
+  .top-header,
+  .main-header,
+  .copyright {
     padding: 1rem 10rem;
   }
   .footer-container {
@@ -806,5 +810,8 @@ input[type="email"] {
     background: darkslategray;
     color: white;
     padding: 0.4rem 0.6rem;
+  }
+  .section .row .sect {
+    width: 30%;
   }
 }
