@@ -24,7 +24,7 @@ textarea {
 .btn {
   text-decoration: none;
   color: white;
-  background: burlywood;
+  background: var(--green);
   padding: 0.6rem 1.3rem;
   border-radius: 20px;
   margin: 1rem;
