@@ -593,7 +593,7 @@ input[type="email"] {
 
 .store {
   width: 100%;
-  background: url(/img/1-1-450x300.jpg);
+  background: url(/img/eresbella-cta-image.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -630,7 +630,7 @@ input[type="email"] {
   font-size: 1.1rem;
 }
 .footer-container {
-  background: burlywood;
+  background: #eaeaea;
   padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
