@@ -50,32 +50,32 @@
               <!---desktop menu-->
               <div class="desktopmenu">
                 <ul>
-                  <li class="active"><a href="index.html">home</a></li>
+                  <li class="active"><a href="home/">home</a></li>
                   <li>
-                    <a href="course.html">courses</a>
+                    <a>courses</a>
                     <div class="dropdownmenu1">
                       <ul>
                         <li>
-                          <a href="certinskin.html"
+                          <a href="<?php site_url();?>/onlineschool/certainskin"
                             >Certificate in formulating organic..</a
                           >
                         </li>
                         <li>
-                          <a href="certinhair.html">
+                          <a href="<?php site_url();?>/onlineschool/certainhair/">
                             Certificate organic hair care pro..</a
                           >
                         </li>
                         <li>
-                          <a href="beginner.html"
+                          <a href="<?php site_url(); ?>/onlineschool/beginner/"
                             >Beginners soap making course</a
                           >
                         </li>
                       </ul>
                     </div>
                   </li>
-                  <li><a href="faq.html">FAQ</a></li>
-                  <li><a href="about.html">about us</a></li>
-                  <li><a href="contact.html">contact us</a></li>
+                  <li><a href="<?php site_url(); ?>/onlineschool/faq/">FAQ</a></li>
+                  <li><a href="<?php site_url(); ?>/onlineschool/about-us/">about us</a></li>
+                  <li><a href="<?php site_url(); ?>/onlineschool/contact/">contact us</a></li>
                   <li>
                     <a href="#"><span>Enroll Now</span></a>
                   </li>

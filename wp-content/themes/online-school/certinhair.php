@@ -1,6 +1,6 @@
 <?php /* Template Name: certainhair */ ?>
+<?php  get_header();?>
 
-<?php  get_header()?>
     <div class="cert-title">
       <h1>Certificate in formulating hair serum
       </h1>
@@ -44,61 +44,4 @@
       </div>
     </div>
   </main>
-  <div class="footer-container res-pad">
-    <div class="footer-about">
-      <P><a href="index.html">HOME</a></P>
-      <P><a href="course.html">ALL COURSES</a></P>
-      <P><a href="#">OUR BLOG</a></P>
-      <P><a href="index.html">START HERE</a></P>
-      
-      
-    </div>
-    <div class="footer-course">
-      <p><a href="#"> STUDENT LOGIN</a></p>
-      <p><a href="about.html"> ABOUT US</a></p>
-      <p><a href="contact.html"> CONTACT US</a></p>
-      <P><a href="#">STAFF MAIL</a></P>
-    </div>
-    <div class="contact-address">
-      <h4>CONTACT</h4>
-      <P>1a, Harvey Road, off Herbert Macaulay Way, Behind Domino's Pizza, Yaba, Lagos, Nigeria.
-        Tel.: +234 812 844 8323</P>
-        <P>admin@mayaorganicschool.com</P>
-
-    </div>
-    <div footer="locator">
-      <h4>FIND US ON:</h4>
-      <div class="icons">
-        <div>
-        <p class="whatsapp">
-          <a href="http://whatsapp.com"
-                ><i class="fab fa-whatsapp"></i>
-        </a>
-        <p></div>
-        <div>
-        <p class="facebook">
-          <a href="http://facebook.com"
-                ><i class="fab fa-facebook"></i>
-        </a>
-      </p></div>
-      <div>
-        <p class="instagram">
-          <a href="http:/instagram.com"
-                ><i class="fab fa-instagram"></i>
-        </a>
-        
-
-      </p></div>
-        
-      </div>
-    </div>
-  </div>
-  <div class="copyright">
-    <div><p id="copyright"> &copy; 2020, All rights reserved.</p></div>
-    
-  </div>
-</footer>
-  <script src="./js/script.js"></script>
-    
-</body>
-</html>
+<?php get_footer();?>
