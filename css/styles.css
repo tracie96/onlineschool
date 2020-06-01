@@ -326,10 +326,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .welcome p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
+
 
 .welcome .mission {
   margin-top: 1rem;
