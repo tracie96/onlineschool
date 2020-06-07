@@ -129,72 +129,6 @@ body {
 .desktopsearch-bar {
   display: none;
 }
-/*.desktopsearch-bar button {
-  position: relative;
-}
-.desktopsearch-bar .toggler {
-  position: absolute;
-  z-index: 3;
-  height: 30px;
-  width: 30px;
-  opacity: 0;
-}
-.desktopsearch-bar .toggler:checked ~ .outofthescreen {
-  visibility: visible;
-}
-.desktopsearch-bar .toggler:checked ~ .outofthescreen > div {
-  transform: scale(1);
-  transition-duration: 0.8s;
-}
-.desktopsearch-bar .toggler:checked ~ .outofthescreen > div > div {
-  opacity: 1;
-}
-
-.desktopsearch-bar .outofthescreen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  visibility: hidden;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.desktopsearch-bar .outofthescreen > div {
-  background: rgba(0, 0, 0, 0.897);
-  width: 200vw;
-  height: 200vw;
-  display: flex;
-  flex: none;
-  align-items: center;
-  justify-content: center;
-  transform: scale(0);
-  transition: all 0.4s ease;
-}
-.desktopsearch-bar .outofthescreen > div > div {
-  text-align: center;
-  max-width: 90vw;
-  max-height: 100vh;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-.desktopsearch-bar button {
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: darkslategray;
-  color: white;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-.desktopsearch-bar .outofthescreen input[type="text"] {
-  padding: 0.8rem 1.2rem;
-  outline: none;
-}*/
 .mobilenav {
   position: relative;
 }
@@ -299,23 +233,6 @@ body {
 .header-overlay-text a:hover {
   background: burlywood;
 }
-.topmost-whatsapp {
-  position: fixed;
-  z-index: 20;
-  top: 85%;
-  right: 5%;
-  background-color: #25d366;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.topmost-whatsapp a {
-  font-size: 1.5rem;
-  color: white;
-}
 
 .welcome {
   margin-top: auto;
@@ -326,23 +243,21 @@ body {
   justify-content: center;
   align-items: center;
 }
+.welcome h2{
+  color: var(--green) ;
+}
+.welcome h2 span{
+  border-bottom: 1px solid var(--green);
+  padding-bottom: 1rem;
+}
+
 .welcome p {
   font-size: 1rem;
+  text-align: start;
+  padding: 1rem;
+  
 }
 
-
-.welcome .mission {
-  margin-top: 1rem;
-  padding-top: 1rem;
-  margin-bottom: 0.5rem;
-  color: darkgreen;
-}
-.welcome .mission p {
-  letter-spacing: 1px;
-  border-top: 1px solid rgba(0, 0, 0, 0.356);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.356);
-  padding: 2rem;
-}
 .section {
   display: flex;
   flex-direction: column;
@@ -390,6 +305,7 @@ body {
   padding: 0.6rem 1.3rem;
   border-radius: 20px;
 }
+
 .section.courses .row .course-card {
   display: flex;
   flex-direction: column;
@@ -398,6 +314,7 @@ body {
   width: 100%;
   height: 200px;
   overflow: hidden;
+
 }
 .section.courses .row .course-card .course-img img {
   width: 100%;
@@ -408,7 +325,7 @@ body {
 .section.courses .row .course-card .course-info .course-title {
   padding: 0.5rem 0;
   font-size: 20px;
-  border-bottom: 1px solid #e6e6e6;
+  text-align: start;
 }
 .section.courses .row .course-card .course-info .course-price {
   display: flex;
@@ -417,183 +334,73 @@ body {
 }
 .courses {
   padding: 3rem 1rem;
+  background-color: var(--green);
 }
-.courses h1 {
-  color: darkslategray;
+.courses h2 {
   padding-top: 2rem;
-  padding-bottom: 3rem;
-  font-size: 2.3rem;
 }
-/*packages {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.packages > div {
-  width: 100%;
-  position: relative;
-  border: 1px solid #cccc;
-  margin-top: 2rem;
+.courses h2 span{
   padding-bottom: 1rem;
+  border-bottom: 1px solid #25d366;;
 }
-.packages > div img {
-  display: block;
-  width: 100%;
-  height: 50%;
+
+.courses p{
+  padding-top: 1rem;
+  color: white;
 }
-.packages > div .overlaybg {
-  position: absolute;
-  z-index: 10;
-  top: 80%;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  background-color: white;
-}
-.packages > div .text {
-  width: 100%;
-  padding: 0.8rem 0.4rem;
+.courses .more-info{
   text-align: start;
-  font-size: 1.2rem;
-  border-bottom: 1px solid #ccc;
 }
-.packages > div .text a {
-  text-decoration: none;
-  color: darkslategray;
-}
-.packages > div .price {
-  text-align: right;
-  padding: 0.4rem;
-}
-.packages > div .price span {
+.courses .more-info a{
+  border-bottom: 1px solid black;
   font-size: 0.8rem;
-  color: rgba(0, 0, 0, 0.555);
-  text-decoration: line-through;
 }
-.packages > div .price p {
-  color: darkslategray;
-  font-weight: bold;
-}*/
-.signup {
-  background: darkslategray;
-  padding: 3rem 1rem;
+.courses .btn{
+  border: 2px solid white;
+  border-radius: 0;
+  background-color: #25d366;
+
+}
+.graduates h2{
   text-align: center;
-  color: white;
+  color: var(--green) ;
 }
-.signup h1 {
-  padding: 1rem;
-  margin-bottom: 0.8rem;
-}
-.signup p {
-  font-size: 1.1rem;
-  margin-bottom: 0.8rem;
-}
-input[type="email"] {
-  padding: 0.8rem 2rem;
-  outline: none;
-  margin-bottom: 1.2rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.signup a {
-  text-decoration: none;
-  color: white;
-  background: darkgoldenrod;
-  margin-top: 0.8rem;
-  padding: 0.5rem 1.2rem;
-  transition: all 0.4s ease;
-}
-.signup a:hover {
-  background: linear-gradient(to right, burlywood, darkslategray);
-}
-.benefits {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 1.5rem;
-  width: 100%;
-}
-.benefits > div h1 {
-  color: darkslategray;
-  font-size: 1.8rem;
+.graduates h2 span{
+  border-bottom: 1px solid var(--green);
   padding-bottom: 1rem;
-  border-bottom: 1px solid #ccc;
+
 }
-.benefits > div > ul > li {
-  padding: 0.5rem;
-  font-size: 1.1rem;
-}
-/*.studentProject {
-  background: #f4f4f4;
-  padding: 2rem 1rem;
-  text-align: center;
-  width: 100%;
-}
-.studentProject h1 {
-  text-align: center;
-  color: darkslategray;
-  font-size: 1.8rem;
-}
-.studentProject h1 span {
-  color: darkgoldenrod;
-}
-.projectdemo {
-  padding: 3rem 1rem;
+.graduates .graduatesquote{
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  width: 100%;
-}
-.demoimgs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  padding-bottom: 2rem;
-}
-.demoimgs > div {
-  position: relative;
-  width: 100%;
-}
-.demoimgs > div img {
-  width: 100%;
-}
-.projectoverlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease-in-out;
-  background: rgba(47, 79, 79, 0.342);
-}
-.projectoverlay > div {
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: burlywood;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
 }
 
-.in-place-of-video > div {
-  width: 100%;
+.graduates .graduatesquote>div .quotesContent{
+  padding: 2.2rem;
 }
-.in-place-of-video > div img {
-  width: 50%;
+.fa-quote-left{
+  color: var(--green)
 }
-.projectoverlay:hover {
-  opacity: 1;
-}*/
+.graduates .graduatesquote>div .profile{
+  background-color: var(--green);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
 
-.store {
+}
+.graduates .graduatesquote>div .profile img{
+  border-radius: 50px;
+  
+}
+.graduates .graduatesquote>div .profile .nameAndTitle{
+  padding-left: .8rem;
+  color: white;
+}
+
+
+
+/*.store {
   width: 100%;
   background: url(/img/1-1-450x300.jpg);
   background-size: cover;
@@ -630,7 +437,7 @@ input[type="email"] {
   border-radius: 20px;
   margin: 1rem;
   font-size: 1.1rem;
-}
+}*/
 .footer-container {
   background: burlywood;
   padding: 3rem 1rem;
@@ -800,9 +607,6 @@ input[type="email"] {
     flex-direction: row;
 
   }
-  .welcome .center-contentAndvideo > div{
-      justify-content: ;
-  }
 
   
   .welcomenote{
@@ -815,6 +619,11 @@ input[type="email"] {
     align-items: center;
     margin-left: 1rem;
     width: 50%;
+  }
+  .graduates .graduatesquote{
+    
+    flex-direction: row;
+  
   }
     
   
