@@ -431,6 +431,7 @@ body {
 .graduates .graduatesquote .profile .nameAndTitle{
   padding-left: .8rem;
   color: white;
+  text-align: left;
 }
 
 
