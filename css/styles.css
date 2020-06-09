@@ -436,44 +436,7 @@ body {
 
 
 
-/*.store {
-  width: 100%;
-  background: url(/img/eresbella-cta-image.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  color: white;
-  text-align: center;
-  position: relative;
-}
-.store .storeoverlay {
-  position: relative;
-  padding: 3rem 1rem;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.767);
-}
-.store .storeoverlay .text h1 {
-  font-size: 1.8rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-}
-.store .storeoverlay .text p {
-  font-size: 1.3rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-}
-.store .storeoverlay .text a {
-  text-decoration: none;
-  color: white;
-  background: burlywood;
-  padding: 0.6rem 1.3rem;
-  border-radius: 20px;
-  margin: 1rem;
-  font-size: 1.1rem;
-}*/
+
 .footer-container {
   background: #eaeaea;
   padding: 3rem 1rem;

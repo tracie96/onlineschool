@@ -1,3 +1,4 @@
+
 @import "./variables.css";
 
 .cert-title{
@@ -46,6 +47,7 @@
 }
 
 @media(min-width: 760px){
+    
     .theCourse{
         flex-direction: row;
     }
