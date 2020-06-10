@@ -181,6 +181,10 @@ body {
   border: none;
   cursor: pointer;
 }
+.single-course {
+  padding: 0.5rem;
+  background-color: var(--cream);
+}
 .main-banner {
   position: relative;
   width: 100%;
@@ -514,14 +518,26 @@ body {
   margin: 1rem 0;
   width: 100%;
 }
-
+.course-info .row {
+  display: flex;
+  flex-direction: column;
+}
+.course-info .row .course-title-action {
+  display: flex;
+  flex-direction: column;
+}
+.course-info .row .course-title-action h1 {
+  font-size: 42px;
+  line-height: 51px;
+  font-weight: 900;
+}
 @media screen and (min-width: 768px) {
   .res-pad {
     padding: 2rem 4rem;
   }
   .top-header,
   .main-header,
-  .copyright {
+  .copyright, .single-course {
     padding: 1rem 4rem;
   }
   .main-header .mobile-web-nav .toggle-button {
@@ -577,6 +593,10 @@ body {
   .section.graduates .row {
     flex-wrap: nowrap;
   }
+  .course-info .row {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 @media (min-width: 860px) {
   .top-header .contact-info .top-address {
@@ -599,7 +619,7 @@ body {
   }
   .top-header,
   .main-header,
-  .copyright {
+  .copyright, .single-course {
     padding: 1rem 8rem;
   }
   .welcome .center-contentAndvideo {
