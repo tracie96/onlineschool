@@ -517,12 +517,12 @@ body {
 
 @media screen and (min-width: 768px) {
   .res-pad {
-    padding: 2rem 5rem;
+    padding: 2rem 4rem;
   }
   .top-header,
   .main-header,
   .copyright {
-    padding: 1rem 5rem;
+    padding: 1rem 4rem;
   }
   .main-header .mobile-web-nav .toggle-button {
     display: none;
@@ -587,7 +587,7 @@ body {
 }
 @media (min-width: 990px) {
   .res-pad {
-    padding: 3.5rem 10rem;
+    padding: 3.5rem 8rem;
   }
   .toggle-button {
     display: none;
@@ -601,7 +601,7 @@ body {
   .top-header,
   .main-header,
   .copyright {
-    padding: 1rem 10rem;
+    padding: 1rem 8rem;
   }
   .welcome .center-contentAndvideo {
     padding-top: 4rem;
