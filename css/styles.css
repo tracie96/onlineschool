@@ -541,7 +541,6 @@ body {
     display: flex;
     padding: 0 1.5rem;
   }
-
   .main-header .mobile-web-nav .desktopmenu ul li:last-child {
     padding-right: 0;
   }
@@ -621,8 +620,7 @@ body {
   }
   .graduates .graduatesquote {
     flex-direction: row;
-  }
-
+  } 
   .footer-container {
     display: flex;
     flex-direction: row;
