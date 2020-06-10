@@ -439,7 +439,7 @@ body {
   margin-bottom: 0;
 }
 .footer-container {
-  background: #eaeaea;
+  background: var(--green);
   padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
@@ -449,10 +449,12 @@ body {
 }
 .footer-container h4 {
   padding: 2rem 0rem;
+  color: #f4f4f4;
 }
 .footer-container p {
   padding-bottom: 0.8rem;
   font-size: 0.9rem;
+  color: #f4f4f4;
 }
 .footer-container .footer-courses img {
   height: 40px;
@@ -470,13 +472,13 @@ body {
 .footer-container .footer-courses a,
 .footer-container .footer-links a {
   text-decoration: none;
-  color: black;
+  color: #f4f4f4;
 }
-
 .copyright {
-  background: darkslategrey;
+  background: var(--green);
   padding: 1rem;
   color: white;
+  border-top: 1px solid #5a8077;
 }
 .copyright > div > ul > li {
   list-style: none;
