@@ -34,67 +34,7 @@
     margin-bottom: 1rem;
 }
 
-.how-to-enroll{
-    background-color: burlywood;
-    padding: 3rem 1rem;
-}
-.how-to-enroll h2{
-    color: var(--green);
-    font-size: 1.4rem;
-    text-align: start;
-    margin-bottom: 1rem;
-}
-.how-to-enroll p{
-    font-size:1rem ;
 
-}
-.how-to-enroll >ul{
-    padding: 0.5rem;
-    
-}
-.how-to-enroll >ul>li{
-    padding: 0.5rem 0rem;
-    list-style: none;
-    font-style: italic;
-}
-.how-to-enroll .linedivider img{
-    width: 100%;
-}
-.connect h2{
-    font-weight: lighter;
-    padding-bottom: 2rem;
-    letter-spacing: 1px;
-}
-.connect .storeoverlay .text p{
-    font-size:1rem;
-    padding-bottom: 1rem;
-}
-.connect .storeoverlay .text .icons{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2rem;
-}
-.connect .storeoverlay .text .icons> div{
-
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0rem .4rem;
-}
-.connect .storeoverlay .text .icons> div a{
-    color: white;
-    background: none;
-    font-size: 1.2rem;
-}
-.connect .storeoverlay .text .icons> div a:hover{
-    transform: translate(-20%);
-}
 
 @media(min-width:768px){
     .hightlightlist{
