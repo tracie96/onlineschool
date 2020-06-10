@@ -381,6 +381,9 @@ body {
   padding: 3rem 1rem;
   background-color: var(--green);
 }
+.coursepage-courses{
+  background-color: var(--white);
+}
 .courses h2 {
   padding-top: 2rem;
 }
