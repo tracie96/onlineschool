@@ -16,6 +16,9 @@
   color: white;
   overflow: hidden;
 }
+.coursetab{
+  color:black;
+}
 .tab-label {
   display: -webkit-box;
   display: flex;
@@ -27,8 +30,15 @@
   cursor: pointer;
   /* Icon */
 }
+.course-table-label{
+  background: rgba(144, 238, 144, 0.87);
+    
+}
 .tab-label:hover {
   background: #1a252f;
+}
+.course-table-label:hover{
+  background: var(--light-green);
 }
 .tab-label::after {
   content: "\276F";
@@ -56,13 +66,24 @@
   background: #2c3e50;
   cursor: pointer;
 }
+.course-table-close{
+  background: rgba(144, 238, 144, 0.87)
+}
 .tab-close:hover {
   background: #1a252f;
 }
+.course-table-close:hover{
+  background: var(--light-green);
+}
+
 
 .accordion-input:checked + .tab-label {
   background: #1a252f;
 }
+.accordion-input:checked + .course-table-label {
+  background: rgba(144, 238, 144, 0.87);
+}
+
 .accordion-input:checked + .tab-label::after {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);

@@ -245,6 +245,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+.course-intro {
+  text-align: center;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 .welcome h2 {
   color: var(--green);
 }
@@ -256,6 +263,10 @@ body {
   font-size: 1rem;
   text-align: start;
   padding: 1rem;
+}
+.course-intro p{
+  text-align: center;
+    
 }
 .section {
   display: flex;
@@ -348,11 +359,19 @@ body {
 .section.courses .row .course-card .course-info {
   padding: 1rem;
 }
+.section.courses .row .nuCourseCard .course-info {
+  padding: 0rem;
+}
 .section.courses .row .course-card .course-info .course-title {
   padding: 0.5rem 0;
   font-size: 20px;
   text-align: start;
 }
+.section.courses .row .nuCourseCard .course-info .course-title {
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
 .section.courses .row .course-card .course-info .course-price {
   display: flex;
   justify-content: space-between;
@@ -562,6 +581,10 @@ body {
   }
   .header-overlay-text {
     margin: 0 25%;
+  }
+  .course-intro p{
+    padding: 2rem 10rem
+      
   }
   .section .row {
     flex-direction: row;
