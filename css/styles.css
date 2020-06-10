@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   font-size: 16px;
 }
@@ -531,6 +531,21 @@ body {
   line-height: 51px;
   font-weight: 900;
 }
+.course-info .row .course-title-action .action {
+  padding: 1.5rem 0;
+}
+.course-info .row .courseimg {
+  width: 100%;
+  max-width: 380px;
+}
+.course-info .row .courseimg img {
+  width: 100%;
+}
+.course-info .row .course-title-action .action .btn {
+  border-radius: 0;
+  background-color: var(--lemon-green);
+  margin-bottom: 0;
+}
 @media screen and (min-width: 768px) {
   .res-pad {
     padding: 2rem 4rem;
@@ -596,6 +611,9 @@ body {
   .course-info .row {
     flex-direction: row;
     align-items: center;
+  }
+  .course-info .row .course-title-action h1 {
+    padding: 0 1.5rem 1.5rem 0;
   }
 }
 @media (min-width: 860px) {
