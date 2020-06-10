@@ -456,9 +456,6 @@ body {
   font-size: 0.9rem;
   color: #f4f4f4;
 }
-.footer-container .footer-courses img {
-  height: 40px;
-}
 .footer-btn {
   margin-top: 1rem;
   text-decoration: none;
@@ -466,8 +463,9 @@ body {
   border: 2px solid white;
   padding: 0.5rem 1.1rem;
 }
-.footer-container .footer-courses a {
+.footer-container .footer-courses p a {
   font-weight: bold;
+  text-decoration: underline;
 }
 .footer-container .footer-courses a,
 .footer-container .footer-links a {
