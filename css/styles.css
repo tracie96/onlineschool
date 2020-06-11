@@ -144,7 +144,7 @@ body {
   padding: 0.5rem;
   left: 0;
 }
-.mobile-web-nav .mobilemenu > ul {
+.mobilemenu > ul {
   padding-top: 1.6rem;
 }
 .mobile-web-nav .mobilemenu > ul > li {
@@ -152,7 +152,7 @@ body {
   text-transform: uppercase;
   padding: 1.3rem;
   position: relative;
-  z-index: -2;
+  z-index: 1;
   border: 1px solid #cccccc65;
   background: #cccccc56;
 }
@@ -369,7 +369,7 @@ body {
 }
 .section.courses .row .nuCourseCard .course-info .course-title {
   padding: 0.5rem 1rem;
-  text-align: center;
+  
 }
 
 .section.courses .row .course-card .course-info .course-price {
