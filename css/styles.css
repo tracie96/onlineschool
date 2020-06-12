@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   font-size: 16px;
 }
@@ -247,7 +247,7 @@ body {
 }
 .course-intro {
   text-align: center;
-  display: flex ;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -256,7 +256,6 @@ body {
   color: var(--green);
 }
 .welcome h2 span {
-  border-bottom: 1px solid var(--green);
   padding-bottom: 1rem;
 }
 .welcome p {
@@ -264,9 +263,8 @@ body {
   text-align: start;
   padding: 1rem;
 }
-.course-intro p{
+.course-intro p {
   text-align: center;
-    
 }
 .section {
   display: flex;
@@ -347,6 +345,8 @@ body {
 .section.courses .row .course-card {
   display: flex;
   flex-direction: column;
+  position: relative;
+  box-shadow: none;
 }
 .section.courses .row .course-card .course-img {
   width: 100%;
@@ -357,31 +357,50 @@ body {
   width: 100%;
 }
 .section.courses .row .course-card .course-info {
-  padding: 1rem;
-}
-.section.courses .row .nuCourseCard .course-info {
-  padding: 0rem;
+  padding-bottom: 0.5rem;
+  max-height: 250px;
 }
 .section.courses .row .course-card .course-info .course-title {
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   font-size: 20px;
   text-align: start;
 }
 .section.courses .row .nuCourseCard .course-info .course-title {
   padding: 0.5rem 1rem;
-  
 }
-
 .section.courses .row .course-card .course-info .course-price {
   display: flex;
-  justify-content: space-between;
-  padding: 0.5rem 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.section.courses .row .course-card .course-info .course-price .c-price {
+  flex: 0 0 40%;
+}
+.section.courses .row .course-card .course-info .course-price .link {
+  display: flex;
+  justify-content: center;
+  flex-direction: center;
+  width: 100%;
+}
+.section.courses .row .course-card .course-info .course-price .link a {
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+.section.courses .row .course-card .course-info .course-price .link a i {
+ margin-left: 1rem;
+}
+.section.courses .row .course-card .course-info .course-price .link a {
+  display: flex;
+  padding: 0;
+  align-items: center;
 }
 .courses {
   padding: 3rem 1rem;
   background-color: var(--green);
 }
-.coursepage-courses{
+.coursepage-courses {
   background-color: var(--white);
 }
 .courses h2 {
@@ -389,7 +408,6 @@ body {
 }
 .courses h2 span {
   padding-bottom: 1rem;
-  border-bottom: 1px solid #25d366;
 }
 .courses p {
   padding-top: 1rem;
@@ -397,13 +415,13 @@ body {
 }
 .courses .more-info {
   text-align: start;
+  padding: 0 0.5rem;
 }
 .courses .more-info a {
   border-bottom: 1px solid black;
   font-size: 0.8rem;
 }
 .courses .btn {
-  border: 2px solid white;
   border-radius: 0;
   background-color: #25d366;
 }
@@ -412,7 +430,6 @@ body {
   color: var(--green);
 }
 .graduates h2 span {
-  border-bottom: 1px solid var(--green);
   padding-bottom: 1rem;
 }
 .graduates .graduatesquote {
@@ -459,7 +476,6 @@ body {
   padding-bottom: 0;
 }
 .section.cta .btn {
-  border: 2px solid white;
   border-radius: 0;
   background-color: #25d366;
   margin-bottom: 0;
@@ -574,7 +590,8 @@ body {
   }
   .top-header,
   .main-header,
-  .copyright, .single-course {
+  .copyright,
+  .single-course {
     padding: 1rem 4rem;
   }
   .main-header .mobile-web-nav .toggle-button {
@@ -600,9 +617,8 @@ body {
   .header-overlay-text {
     margin: 0 25%;
   }
-  .course-intro p{
-    padding: 2rem 10rem
-      
+  .course-intro p {
+    padding: 2rem 10rem;
   }
   .section .row {
     flex-direction: row;
@@ -614,6 +630,13 @@ body {
   }
   .projectdemo {
     flex-direction: row;
+  }
+  .courses h2 span {
+    border-bottom: 1px solid #25d366;
+  }
+  .welcome h2 span,
+  .graduates h2 span {
+    border-bottom: 1px solid var(--green);
   }
   .demoimgs > div img {
     width: 80%;
@@ -663,7 +686,8 @@ body {
   }
   .top-header,
   .main-header,
-  .copyright, .single-course {
+  .copyright,
+  .single-course {
     padding: 1rem 8rem;
   }
   .welcome .center-contentAndvideo {
@@ -684,7 +708,7 @@ body {
   }
   .graduates .graduatesquote {
     flex-direction: row;
-  } 
+  }
   .footer-container {
     display: flex;
     flex-direction: row;
