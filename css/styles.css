@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   font-size: 16px;
 }
@@ -125,7 +125,6 @@ body {
 .desktopmenu > ul > li:hover .dropdownmenu1 > ul > li a {
   color: #f4f4f4;
 }
-
 .desktopsearch-bar {
   display: none;
 }
@@ -145,7 +144,7 @@ body {
   padding: 0.5rem;
   left: 0;
 }
-.mobile-web-nav .mobilemenu > ul {
+.mobilemenu > ul {
   padding-top: 1.6rem;
 }
 .mobile-web-nav .mobilemenu > ul > li {
@@ -153,7 +152,7 @@ body {
   text-transform: uppercase;
   padding: 1.3rem;
   position: relative;
-  z-index: -2;
+  z-index: 1;
   border: 1px solid #cccccc65;
   background: #cccccc56;
 }
@@ -181,6 +180,10 @@ body {
   font-size: 17px;
   border: none;
   cursor: pointer;
+}
+.single-course {
+  padding: 0.5rem;
+  background-color: var(--cream);
 }
 .main-banner {
   position: relative;
@@ -233,7 +236,6 @@ body {
 .header-overlay-text a:hover {
   background: burlywood;
 }
-
 .welcome {
   margin-top: auto;
   padding: 2rem 1rem 2.5rem 1rem;
@@ -243,21 +245,29 @@ body {
   justify-content: center;
   align-items: center;
 }
-.welcome h2{
-  color: var(--green) ;
+.course-intro {
+  text-align: center;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
-.welcome h2 span{
+.welcome h2 {
+  color: var(--green);
+}
+.welcome h2 span {
   border-bottom: 1px solid var(--green);
   padding-bottom: 1rem;
 }
-
 .welcome p {
   font-size: 1rem;
   text-align: start;
   padding: 1rem;
-  
 }
-
+.course-intro p{
+  text-align: center;
+    
+}
 .section {
   display: flex;
   flex-direction: column;
@@ -268,7 +278,7 @@ body {
   width: 100%;
 }
 .section.why {
-  background: var(--grey)
+  background: var(--grey);
 }
 .section h2 {
   color: white;
@@ -334,7 +344,6 @@ body {
   padding: 0.6rem 1.3rem;
   border-radius: 20px;
 }
-
 .section.courses .row .course-card {
   display: flex;
   flex-direction: column;
@@ -343,7 +352,6 @@ body {
   width: 100%;
   height: 200px;
   overflow: hidden;
-
 }
 .section.courses .row .course-card .course-img img {
   width: 100%;
@@ -351,11 +359,19 @@ body {
 .section.courses .row .course-card .course-info {
   padding: 1rem;
 }
+.section.courses .row .nuCourseCard .course-info {
+  padding: 0rem;
+}
 .section.courses .row .course-card .course-info .course-title {
   padding: 0.5rem 0;
   font-size: 20px;
   text-align: start;
 }
+.section.courses .row .nuCourseCard .course-info .course-title {
+  padding: 0.5rem 1rem;
+  
+}
+
 .section.courses .row .course-card .course-info .course-price {
   display: flex;
   justify-content: space-between;
@@ -365,60 +381,59 @@ body {
   padding: 3rem 1rem;
   background-color: var(--green);
 }
+.coursepage-courses{
+  background-color: var(--white);
+}
 .courses h2 {
   padding-top: 2rem;
 }
-.courses h2 span{
+.courses h2 span {
   padding-bottom: 1rem;
-  border-bottom: 1px solid #25d366;;
+  border-bottom: 1px solid #25d366;
 }
-
-.courses p{
+.courses p {
   padding-top: 1rem;
   color: white;
 }
-.courses .more-info{
+.courses .more-info {
   text-align: start;
 }
-.courses .more-info a{
+.courses .more-info a {
   border-bottom: 1px solid black;
   font-size: 0.8rem;
 }
-.courses .btn{
+.courses .btn {
   border: 2px solid white;
   border-radius: 0;
   background-color: #25d366;
-
 }
-.graduates h2{
+.graduates h2 {
   text-align: center;
-  color: var(--green) ;
+  color: var(--green);
 }
-.graduates h2 span{
+.graduates h2 span {
   border-bottom: 1px solid var(--green);
   padding-bottom: 1rem;
-
 }
 .graduates .graduatesquote {
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
 }
-
-.graduates .graduatesquote .quotesContent{
+.graduates .graduatesquote .quotesContent {
   padding: 2.2rem;
   text-align: left;
 }
-.fa-quote-left{
-  color: var(--green)
+.fa-quote-left {
+  color: var(--green);
 }
-.graduates .graduatesquote .profile{
+.graduates .graduatesquote .profile {
   background-color: var(--green);
   padding: 1rem;
   display: flex;
   align-items: center;
 }
-.graduates .graduatesquote .profile .img-holder{
+.graduates .graduatesquote .profile .img-holder {
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -428,54 +443,29 @@ body {
   width: 100%;
   height: auto;
 }
-.graduates .graduatesquote .profile .nameAndTitle{
-  padding-left: .8rem;
+.graduates .graduatesquote .profile .nameAndTitle {
+  padding-left: 0.8rem;
   color: white;
   text-align: left;
 }
-
-
-
-/*.store {
-  width: 100%;
-  background: url(/img/eresbella-cta-image.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  color: white;
-  text-align: center;
-  position: relative;
+.section.bg-lemon {
+  background-color: var(--light-green);
 }
-.store .storeoverlay {
-  position: relative;
-  padding: 3rem 1rem;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.767);
+.section.cta {
+  padding: 3.5rem 0;
 }
-.store .storeoverlay .text h1 {
-  font-size: 1.8rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+.section.cta .title {
+  color: var(--green);
+  padding-bottom: 0;
 }
-.store .storeoverlay .text p {
-  font-size: 1.3rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+.section.cta .btn {
+  border: 2px solid white;
+  border-radius: 0;
+  background-color: #25d366;
+  margin-bottom: 0;
 }
-.store .storeoverlay .text a {
-  text-decoration: none;
-  color: white;
-  background: burlywood;
-  padding: 0.6rem 1.3rem;
-  border-radius: 20px;
-  margin: 1rem;
-  font-size: 1.1rem;
-}*/
 .footer-container {
-  background: #eaeaea;
+  background: var(--green);
   padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
@@ -485,13 +475,12 @@ body {
 }
 .footer-container h4 {
   padding: 2rem 0rem;
+  color: #f4f4f4;
 }
 .footer-container p {
   padding-bottom: 0.8rem;
   font-size: 0.9rem;
-}
-.footer-container .footer-courses img {
-  height: 40px;
+  color: #f4f4f4;
 }
 .footer-btn {
   margin-top: 1rem;
@@ -500,19 +489,20 @@ body {
   border: 2px solid white;
   padding: 0.5rem 1.1rem;
 }
-.footer-container .footer-courses a {
+.footer-container .footer-courses p a {
   font-weight: bold;
+  text-decoration: underline;
 }
 .footer-container .footer-courses a,
 .footer-container .footer-links a {
   text-decoration: none;
-  color: black;
+  color: #f4f4f4;
 }
-
 .copyright {
-  background: darkslategrey;
+  background: var(--green);
   padding: 1rem;
   color: white;
+  border-top: 1px solid #5a8077;
 }
 .copyright > div > ul > li {
   list-style: none;
@@ -550,15 +540,42 @@ body {
   margin: 1rem 0;
   width: 100%;
 }
-
+.course-info .row {
+  display: flex;
+  flex-direction: column;
+}
+.course-info .row .course-title-action {
+  display: flex;
+  flex-direction: column;
+}
+.course-info .row .course-title-action h1 {
+  font-size: 42px;
+  line-height: 51px;
+  font-weight: 900;
+}
+.course-info .row .course-title-action .action {
+  padding: 1.5rem 0;
+}
+.course-info .row .courseimg {
+  width: 100%;
+  max-width: 380px;
+}
+.course-info .row .courseimg img {
+  width: 100%;
+}
+.course-info .row .course-title-action .action .btn {
+  border-radius: 0;
+  background-color: var(--lemon-green);
+  margin-bottom: 0;
+}
 @media screen and (min-width: 768px) {
   .res-pad {
-    padding: 2rem 5rem;
+    padding: 2rem 4rem;
   }
   .top-header,
   .main-header,
-  .copyright {
-    padding: 1rem 5rem;
+  .copyright, .single-course {
+    padding: 1rem 4rem;
   }
   .main-header .mobile-web-nav .toggle-button {
     display: none;
@@ -577,12 +594,15 @@ body {
     display: flex;
     padding: 0 1.5rem;
   }
-
   .main-header .mobile-web-nav .desktopmenu ul li:last-child {
     padding-right: 0;
   }
   .header-overlay-text {
     margin: 0 25%;
+  }
+  .course-intro p{
+    padding: 2rem 10rem
+      
   }
   .section .row {
     flex-direction: row;
@@ -614,6 +634,13 @@ body {
   .section.graduates .row {
     flex-wrap: nowrap;
   }
+  .course-info .row {
+    flex-direction: row;
+    align-items: center;
+  }
+  .course-info .row .course-title-action h1 {
+    padding: 0 1.5rem 1.5rem 0;
+  }
 }
 @media (min-width: 860px) {
   .top-header .contact-info .top-address {
@@ -623,7 +650,7 @@ body {
 }
 @media (min-width: 990px) {
   .res-pad {
-    padding: 3.5rem 10rem;
+    padding: 3.5rem 8rem;
   }
   .toggle-button {
     display: none;
@@ -636,31 +663,28 @@ body {
   }
   .top-header,
   .main-header,
-  .copyright {
-    padding: 1rem 10rem;
+  .copyright, .single-course {
+    padding: 1rem 8rem;
   }
-  .welcome .center-contentAndvideo{
+  .welcome .center-contentAndvideo {
     padding-top: 4rem;
     display: flex;
     flex-direction: row;
   }
-  .welcomenote{
+  .welcomenote {
     margin-right: 1rem;
     width: 50%;
   }
-  .welcomevideo{
+  .welcomevideo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 1rem;
     width: 50%;
   }
-  .graduates .graduatesquote{
+  .graduates .graduatesquote {
     flex-direction: row;
-  }
-    
-  
-
+  } 
   .footer-container {
     display: flex;
     flex-direction: row;

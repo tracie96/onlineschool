@@ -1,62 +1,56 @@
+
 @import "./variables.css";
 
-.cert-title{
-    
+.cert-title {
     padding: 3rem 1rem;
     background: #f4f4f4;
 }
-.cert-title h1{
+.cert-title h1 {
     font-size: 1.6rem;
     color: var(--green);   
 }
-.cert-title p{
+.cert-title p {
     font-weight: bold;
     font-size: 1rem;
 }
-.theCourse{
-    padding: 3rem 1rem 1rem 1rem;
+.theCourse {
     display: flex;
     flex-direction: column;
     color: rgba(0, 0, 0, 0.719);
+    background-color: var(--cream);
 }
-.theCourse .courseimg{
+.theCourse .courseimg {
     padding-bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-.theCourse > div .flexible{
+.theCourse > div .flexible {
     border-bottom: 1px solid #ccc;
 }
 .theCourse > div h4{
     padding-top: 0.8rem;
 }
-.othercoursepointer{
+.othercoursepointer {
     display: flex;
     flex-direction: column;
     padding: 2rem 1rem;
     border-top: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc;
     margin-bottom: 1rem;
-    
 }
-.othercoursepointer > div a{
+.othercoursepointer > div a {
     color: var(--green);
 }
 
-@media(min-width: 760px){
-    .theCourse{
+@media (min-width: 760px) {
+    .theCourse {
         flex-direction: row;
     }
-    .theCourse > div{
-        margin: 0rem 1rem;
-    }
-    .othercoursepointer{
+    .othercoursepointer {
         flex-direction: row;
         justify-content: space-between;
     }
-    
 }
 
 

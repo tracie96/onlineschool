@@ -1,107 +1,85 @@
 @import "./variables.css";
-
 .course-intro h1{
     color: var(--green);
 }
-.course-intro p{
-    font-size: 1rem;
-}
-.section .course-info span{
-    color: var(--green);
-    font-weight: bold;
-}
-.highlights{
-    background: #f4f4f4;
-    padding: 3rem 1rem;
-}
-.highlights h2{
-    color: var(--green);
-    text-align: center;
-    padding-bottom: 2rem;
-}
-.hightlightlist{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.hightlightlist > div > ul > li{
-    padding: 0.8rem 0.4rem;
-    font-style: italic;
-    font-size: 1rem; 
-}
-.hightlightlist1{
-    margin-bottom: 1rem;
-}
-
-.how-to-enroll{
-    background-color: burlywood;
-    padding: 3rem 1rem;
-}
-.how-to-enroll h2{
-    color: var(--green);
-    font-size: 1.4rem;
-    text-align: start;
-    margin-bottom: 1rem;
-}
-.how-to-enroll p{
-    font-size:1rem ;
+.course-intro h1 span{
+    border-bottom: 1px solid var(--green);
+    padding-bottom: 0.5rem;
 
 }
-.how-to-enroll >ul{
-    padding: 0.5rem;
+
+.nuCourseCard .course-info .course-title{
+    color: var(--green);
+    
     
 }
-.how-to-enroll >ul>li{
-    padding: 0.5rem 0rem;
-    list-style: none;
-    font-style: italic;
+.course-intro p{
+    font-size: 1rem;
+    text-align: center;
 }
-.how-to-enroll .linedivider img{
-    width: 100%;
+.section .course-info .coursetext p{
+    color: black;
+    text-align: start;
+    font-size: 0.8rem;
+    padding: 1rem;
 }
-.connect h2{
-    font-weight: lighter;
+.nuCourseCard .course-info .course-price{
+    background-color: var(--green)
+}
+
+.nuCourseCard .course-info .course-price .c-price{
+    color: var(--white);
+    background: var(--green);
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+}
+    
+
+
+.nuCourseCard .course-info .course-price .link{
+    background-color: var(--lemon-green);
+
+
+    align-items: center;
+}
+.nuCourseCard .course-info .course-price .link a{
+    color: var(--white);
+    padding: 0.5rem 2.5rem;
+    font-weight: bold;
+}
+
+
+.faq{
+    background: rgba(144, 238, 144, 0.87);
+    
+    padding: 3rem
+
+}
+.faq h1{
+    color: var(--green);
     padding-bottom: 2rem;
-    letter-spacing: 1px;
-}
-.connect .storeoverlay .text p{
-    font-size:1rem;
-    padding-bottom: 1rem;
-}
-.connect .storeoverlay .text .icons{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     text-align: center;
     justify-content: center;
-    align-items: center;
-    padding-top: 2rem;
+    word-spacing: 5px
+    
 }
-.connect .storeoverlay .text .icons> div{
-
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0rem .4rem;
-}
-.connect .storeoverlay .text .icons> div a{
+.footer-container p a{
     color: white;
-    background: none;
-    font-size: 1.2rem;
 }
-.connect .storeoverlay .text .icons> div a:hover{
-    transform: translate(-20%);
-}
+
+
 
 @media(min-width:768px){
-    .hightlightlist{
-        flex-direction: row;
-    }
-    .hightlightlist > div{
-        margin: 0 0.5rem;
+    
+    
+    .faq{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .footer-container{
