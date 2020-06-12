@@ -9,7 +9,6 @@
 .tabs {
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
 }
 .tab {
   width: 100%;
@@ -25,14 +24,11 @@
   -webkit-box-pack: justify;
           justify-content: space-between;
   padding: 1em;
-  background: #2c3e50;
   font-weight: bold;
   cursor: pointer;
-  /* Icon */
 }
 .course-table-label{
-  background: rgba(144, 238, 144, 0.87);
-    
+  background: rgb(158, 240, 159);
 }
 .tab-label:hover {
   background: #1a252f;
@@ -51,10 +47,11 @@
 .tab-content {
   max-height: 0;
   padding: 0 1em;
-  color: #2c3e50;
-  background: white;
+  color: #000000;
+  background: rgb(158, 240, 159);
   -webkit-transition: all .35s;
   transition: all .35s;
+  border-bottom: 1px solid #111111;
 }
 .tab-close {
   display: -webkit-box;
@@ -67,7 +64,7 @@
   cursor: pointer;
 }
 .course-table-close{
-  background: rgba(144, 238, 144, 0.87)
+  background: rgb(158, 240, 159)
 }
 .tab-close:hover {
   background: #1a252f;
@@ -75,13 +72,11 @@
 .course-table-close:hover{
   background: var(--light-green);
 }
-
-
 .accordion-input:checked + .tab-label {
   background: #1a252f;
 }
 .accordion-input:checked + .course-table-label {
-  background: rgba(144, 238, 144, 0.87);
+  background: rgb(158, 240, 159);
 }
 
 .accordion-input:checked + .tab-label::after {

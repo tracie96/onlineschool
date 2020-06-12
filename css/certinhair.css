@@ -4,53 +4,80 @@
 .cert-title {
     padding: 3rem 1rem;
     background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
 }
 .cert-title h1 {
+    padding-bottom: 2rem;
     font-size: 1.6rem;
     color: var(--green);   
 }
-.cert-title p {
+.thecours{
+    padding-bottom: 3rem;
+}
+.start .price{
     font-weight: bold;
-    font-size: 1rem;
 }
-.theCourse {
+.start .startCourse{
+    margin-left: 1rem;
+    background-color: var(--lemon-green);
+    color: var(--white);
+    font-weight: bold;
+    padding: 0.5rem 1rem
+}
+.courseimg img{
+    width: 100%;
+    
+}
+.advantages{
+    padding: 3rem 0rem;
+   
+}
+.advantages h2{
+    padding-bottom: 2rem;
+    
+}
+.hopeToAchieve{
     display: flex;
     flex-direction: column;
-    color: rgba(0, 0, 0, 0.719);
-    background-color: var(--cream);
+
 }
-.theCourse .courseimg {
+.TTAandProjects{
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
     padding-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.theCourse > div .flexible {
-    border-bottom: 1px solid #ccc;
+.lists{
+    padding-bottom: 2rem;
 }
-.theCourse > div h4{
-    padding-top: 0.8rem;
-}
-.othercoursepointer {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 1rem;
-    border-top: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
-    margin-bottom: 1rem;
-}
-.othercoursepointer > div a {
-    color: var(--green);
+
+.lists >ol>li, .highlight>ol>li{
+    padding: 0.5rem 0rem;
 }
 
 @media (min-width: 760px) {
-    .theCourse {
+    .cert-title{
         flex-direction: row;
     }
-    .othercoursepointer {
-        flex-direction: row;
-        justify-content: space-between;
+    .thecours{
+        width: 70%;
     }
+    .courseimg{
+        width: 30%;
+    }
+    .hopeToAchieve {
+        flex-direction: row;
+    }
+    .TTAandProjects{
+        width: 70%;
+        text-align: start;
+        margin-right: 3rem;
+        padding-right:2rem;
+    }
+    .highlight{
+        width: 30%;
+    }
+   
 }
 
 
