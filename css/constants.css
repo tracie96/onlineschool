@@ -1,5 +1,8 @@
 @import "./variables.css";
 
+*{
+  line-height: 1.65;
+}
 p {
   padding: 0.5rem 0;
 }
@@ -9,6 +12,9 @@ hr {
 a {
   text-decoration: none;
   color: black;
+}
+ul, ol {
+  margin-left: 1.5rem;
 }
 input, textarea {
   min-height: 35px;
